@@ -1,4 +1,11 @@
-# skafdev
-This repo demonstrate continuous LOCAL development using Skaffold container tool. This tool facilitate easy and repeatable development for Kubernetes application
+# Continuous LOCAL development using *Skaffold*
+This guide walks you thru continuous LOCAL development using Skaffold container tool. This OSS tool from Google facilitate better developer experience for Kubernetes application.
 
-<h1> Intro <h1>
+# Focus
+____
+Skaffold can be used for remote development as well as in  local context. This guide focuses on local development (Mac / Linux) rather than automated context such as CI & CD pipeline. Advanced workflow will be covered separately.
+
+> Consider this as getting started guide for "Skaffold dev" development
+
+# Value Prop
+____
