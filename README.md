@@ -34,15 +34,15 @@ In this local development mode, your application deployed on local kubernetes cl
 * Maintains continuous build-deploy loop
 * Warns on error
 
-# Getting started with local application development   
-<Placeholder>
-
+# Getting started with continuous local app development   
 ## Prerequisites   
-Local kubernetes cluster. Any Kubernetes cluster will work.
+1. Local kubernetes cluster as target cluster for *skaffold*. Any Kubernetes cluster will work.
 * Minikube
 * Docker Edge (Mac / Windows)
 * GKE
-Kubectl. Configure `current-context` with your target cluster environment
+
+2. *Kubectl*
+Configure `current-context` with your target cluster environment
 
 
 ## Installation   
@@ -52,7 +52,7 @@ Kubectl. Configure `current-context` with your target cluster environment
 2. Run the below install script
 `source skaffold-install.sh`
 
-## Continuous development - first time build & deploy
+## First time app build & deploy
 1. Verify Installation
 `skaffold version`
 
@@ -64,7 +64,7 @@ Kubectl. Configure `current-context` with your target cluster environment
 
 4. Run 'skaffold dev'
 
-5. Logs from `Skaffold dev`
+5. Response log from `Skaffold dev`
 > placeholder for
 
 6. Things done by *Skaffold* for you:
@@ -76,14 +76,17 @@ Kubectl. Configure `current-context` with your target cluster environment
 7. Output of the deployed containers
 > Placeholder
 
-## Continuous development - change loop
-1. Update application code
+8. Output from `kubectl`
 > Placeholder
 
-2. Save the file
+## App change loop
+1. Make changes to application source code
 > Placeholder
 
-3. Output from re-deployed application
+2. Save the changes
+> Placeholder
+
+3. Automatic response from re-deployed application
 > Placeholder
 
 4. Things done by *Skaffold* for you:
@@ -93,9 +96,12 @@ Kubectl. Configure `current-context` with your target cluster environment
 * Re-set the image in the Kubernetes manifests defined in `skaffold.yaml`
 * Re-deploy the Kubernetes manifests using `Kubectl apply -f`
 
+5. Output from `kubectl`
+> Placeholder
+
 # Credits
->Author: Parthiban Srinivasan, Solution Architect @ Capgemini
+>Author: Parthiban Srinivasan, Cloud Solution Architect @ Capgemini NA Inc
 ___
 >Google Inc
 
->Skaffold OSS authors
+>*Skaffold* OSS authors
