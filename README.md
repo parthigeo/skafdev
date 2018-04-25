@@ -1,17 +1,22 @@
 # Continuous local Kubernetes app development using *Skaffold*
-This guide walks you thru continuous local application development workflow using *Skaffold*, container tool OSS from Google. It  aims to demonstrate frictionless developer experience for application running on local Kubernetes cluster.
+This guide walks you thru continuous local application development workflow using *Skaffold*, container tool from Google. This guide includes labs that demonstrate frictionless developer experience for container application running on local Kubernetes cluster.
 
 ## What is *Skaffold*
-It is a command line tool from Google's open source container tools that helps iterate an application. It  deploys application on either local or remote Kubernetes cluster. This tool basically detect changes in your application source code as well as the dependencies of your docker images. And automatically triggers build, push & deploy to local / remote Kubernetes cluster per configuration.
+It is a command line tool that helps iterate an application. It deploys application on either local or remote Kubernetes cluster. This OSS tool basically detect changes in your source code as well as the dependencies of your docker images. And automatically triggers build, push & deploy to local / remote Kubernetes cluster.
 
 ## Focus
-This guide focuses on local development context rather than remote context such as automated CI & CD pipeline. Advanced workflow will be covered separately.
+This guide plus labs focuses on local development context rather than remote context such as automated CI & CD pipeline. Advanced workflow will be covered separately.
+
+> Consider this as *Skaffold* getting started guide for local application development
+
+## Target audience
+Targe audience for this guide is primarily developer community. Developers who wants to employ simple, repeatable and yet flexible tool for building and deploying applications for Kubernetes.
 
 > Consider this as *Skaffold* getting started guide for local application development
 
 ## Why use *Skaffold*
 * Simple to use command line tool
-* No cluster side set-up or server side components.
+* No cluster side set-up or server side components
 * Minimal to zero knowledge of Kubernetes
 * Deploy regularly when changing / saving files locally
 * Deploy only the pieces of stack that have change
@@ -48,9 +53,12 @@ Two execution modes mentioned below are supported. We will cover `dev` mode in t
 * Docker Edge (Mac / Windows)
 * GKE
 
-2. *Kubectl*
-Configure `current-context` with your target cluster environment
+2. *Docker*
+* Connects to local docker daemon
+* Used docker-for-desktop context using local docker daemon
 
+2. *Kubectl* - (_optional_)
+Configure `current-context` with your target cluster environment (local cluster for these labs)
 
 ## Installation   
 1. Clone this repository to get access to latest *skaffold* build
@@ -59,7 +67,7 @@ Configure `current-context` with your target cluster environment
 2. Run the below install script
 > `source skaffold-install.sh`
 
-## First time local build & deploy
+## Lab-1: First time local build & deploy
 1. Verify Installation
 > `skaffold version`
 
@@ -86,7 +94,7 @@ Configure `current-context` with your target cluster environment
 8. Output from `kubectl`
 > Placeholder
 
-## Local dev loop - with Kubernetes manifests
+## Lab-2: Local dev loop with Kubernetes manifests
 1. Make changes to application source code
 > Placeholder
 
@@ -106,11 +114,8 @@ Configure `current-context` with your target cluster environment
 5. Output from `kubectl`
 > Placeholder
 
-## Local dev loop - without Kubernetes manifests
+## Lab-3: Local dev loop without Kubernetes manifests
 1. Make changes to application source code
-> Placeholder
-
-# References
 > Placeholder
 
 # References
