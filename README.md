@@ -123,8 +123,8 @@ Two execution modes mentioned below are supported. We will cover `dev` mode in t
 > Placeholder
 
 # Credits
->Author: Parthiban Srinivasan, Cloud Solution Architect @ Capgemini NA Inc
+> Guide Author: Parthiban Srinivasan, Cloud Solution Architect @ Capgemini NA Inc
 ___
->Google Inc
-
+> Tool Author:
+> Google Inc  
 >*Skaffold* OSS authors
