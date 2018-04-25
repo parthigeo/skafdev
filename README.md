@@ -7,7 +7,7 @@ It is a command line tool that help iterate an application locally and then depl
 ## Focus
 This guide focuses on local development context rather than remote context such as automated CI & CD pipeline. Advanced workflow will be covered separately.
 
-> Consider this as getting started guide for "*Skaffold*" local operating mode
+> Consider this as *Skaffold* getting started guide for local application development
 
 ## Why use *Skaffold*
 * Simple to use command line tool.
@@ -21,17 +21,17 @@ This guide focuses on local development context rather than remote context such 
 ## Operating Modes
 Two modes of operation are supported i.e. DEV & RUN
 
-''' skaffold dev '''
-''' skaffold run '''
+'skaffold dev'
+'skaffold run'
 
-## Skaffold DEV
+## Skaffold "*dev*""
 In this local development mode, your application deployed on local kubernetes cluster will be continually updated.  In this mode, *Skaffold*
 
 * Watches source code and docker image dependencies for changes.
 * Runs a build  and deploy when changes are detected
 * Streams logs from deployed containers
 * Maintains continuous build-deploy loop
-* Warns on errors
+* Warns on error
 
 # Getting started with local development   
 <Placeholder>
@@ -45,9 +45,9 @@ In this local development mode, your application deployed on local kubernetes cl
 ## Continuous development
 <Placeholder>
 
-# Maintainer
-<Placeholder>
-
 # Credits
-Google
-Skaffold Authors
+>Author: Parthiban Srinivasan,
+>Solution Architect @ Capgemini
+___
+>Google Inc
+>Skaffold OSS authors
