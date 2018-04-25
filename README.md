@@ -127,4 +127,4 @@ Two execution modes mentioned below are supported. We will cover `dev` mode in t
 ___
 > Tool Author:
 > Google Inc  
->*Skaffold* OSS authors
+>*Skaffold* OSS [maintainers](https://github.com/GoogleContainerTools/skaffold/blob/master/MAINTAINERS)
