@@ -26,7 +26,7 @@ This guide focuses on local development context rather than remote context such 
 * [_Ksync_ from Vaporware](https://vapor-ware.github.io/ksync/ "Ksync's homepage")
 
 ## Operating Modes
-Two modes of operation are supported i.e. DEV & RUN command execution modes
+Two execution modes mentioned below are supported. We will cover `dev` mode in this guide.
 
 `skaffold dev`
 
@@ -59,7 +59,7 @@ Configure `current-context` with your target cluster environment
 2. Run the below install script
 > `source skaffold-install.sh`
 
-## First time app build & deploy
+## First time local build & deploy
 1. Verify Installation
 > `skaffold version`
 
@@ -86,7 +86,7 @@ Configure `current-context` with your target cluster environment
 8. Output from `kubectl`
 > Placeholder
 
-## App change loop
+## Local dev loop - with Kubernetes manifests
 1. Make changes to application source code
 > Placeholder
 
@@ -104,6 +104,13 @@ Configure `current-context` with your target cluster environment
 * Re-deploy the Kubernetes manifests using `Kubectl apply -f`
 
 5. Output from `kubectl`
+> Placeholder
+
+## Local dev loop - without Kubernetes manifests
+1. Make changes to application source code
+> Placeholder
+
+# References
 > Placeholder
 
 # References
