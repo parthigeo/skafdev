@@ -1,4 +1,4 @@
-# Continuous LOCAL Kubernetes application development using *Skaffold*
+# Continuous LOCAL Kubernetes app development using *Skaffold*
 This guide walks you thru continuous local application development using *Skaffold* container tool. This guide aims to demonstrate frictionless developer experience for application running on local Kubernetes cluster.
 
 ## What is *Skaffold*
@@ -12,20 +12,20 @@ This guide focuses on local development context rather than remote context such 
 ## Why use *Skaffold*
 * Simple to use command line tool.
 * No complex cluster / server side component.
-* Deploy regularly when saving files locally
+* Deploy regularly when changing & saving files locally
 * Deploy only the pieces of your stack that have change
 * Image tag management support
 * Pluggable architecture that supports existing tools
 * Flexible workflow support for remote development and  automated CI & CD pipeline
 
 ## Operating Modes
-Two modes of operation are supported i.e. DEV & RUN
+Two modes of operation are supported i.e. DEV & RUN command execution modes
 
 `skaffold dev`
 
 `skaffold run`
 
-## Skaffold `DEV`
+## Skaffold `dev`
 In this local development mode, your application deployed on local kubernetes cluster will be continually updated.  In this mode, *Skaffold*
 
 * Watches source code and docker image dependencies for changes.
