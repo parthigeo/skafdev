@@ -47,10 +47,10 @@ Configure `current-context` with your target cluster environment
 
 ## Installation   
 1. Clone this repository to get access to latest *skaffold* build
-`git clone https://github.com/parthigeo/skafdev.git`
+> `git clone https://github.com/parthigeo/skafdev.git`
 
 2. Run the below install script
-`source skaffold-install.sh`
+> `source skaffold-install.sh`
 
 ## First time app build & deploy
 1. Verify Installation
@@ -97,6 +97,9 @@ Configure `current-context` with your target cluster environment
 * Re-deploy the Kubernetes manifests using `Kubectl apply -f`
 
 5. Output from `kubectl`
+> Placeholder
+
+# References
 > Placeholder
 
 # Credits
