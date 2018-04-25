@@ -1,18 +1,18 @@
 # Continuous local Kubernetes app development using *Skaffold*
-This guide walks you thru continuous local application development workflow using *Skaffold*, container tool from Google. This guide includes labs that demonstrate frictionless developer experience for container application running on local Kubernetes cluster.
+This guide walks you thru continuous local application development workflow using *Skaffold*, container tool from Google. This guide includes lab(s) that demonstrate frictionless developer experience for container application running on local Kubernetes cluster.
 
 ## What is *Skaffold*
-It is a command line tool that helps iterate an application. It deploys application on either local or remote Kubernetes cluster. This OSS tool basically detect changes in your source code as well as the dependencies of your docker images. And automatically triggers build, push & deploy to local / remote Kubernetes cluster.
+It is a command line tool that helps iterate an application. It deploys application on either local or remote Kubernetes cluster. Basically, this OSS tool detect changes in your source code as well as the dependencies of your docker images. And automatically triggers build, push & deploy to local / remote Kubernetes cluster.
 
 ## Focus
-This guide plus labs focuses on local development context rather than remote context such as automated CI & CD pipeline. Advanced workflow will be covered separately.
+This guide plus lab(s) focuses on local development context rather than remote context such as automated CI & CD pipeline. Advanced workflow will be covered separately.
 
 > Consider this as *Skaffold* getting started guide for local application development
 
 ## Target audience
-Targe audience for this guide is primarily developer community. Developers who wants to employ simple, repeatable and yet flexible tool for building and deploying applications for Kubernetes.
+Target audience for this guide is primarily developer community. Developers who wants to employ simple, repeatable & yet flexible tool for building and deploying applications for Kubernetes.
 
-> Consider this as *Skaffold* getting started guide for local application development
+> Kubernetes app developer, DevOps specialist who wants to understand & establish automated CI & CD pipeline
 
 ## Why use *Skaffold*
 * Simple to use command line tool
