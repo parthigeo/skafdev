@@ -21,10 +21,10 @@ This guide focuses on local development context rather than remote context such 
 ## Operating Modes
 Two modes of operation are supported i.e. DEV & RUN
 
-'skaffold dev'
-'skaffold run'
+`skaffold dev`
+`skaffold run`
 
-## Skaffold "*dev*""
+## Skaffold `dev`
 In this local development mode, your application deployed on local kubernetes cluster will be continually updated.  In this mode, *Skaffold*
 
 * Watches source code and docker image dependencies for changes.
@@ -46,8 +46,8 @@ In this local development mode, your application deployed on local kubernetes cl
 <Placeholder>
 
 # Credits
->Author: Parthiban Srinivasan,
->Solution Architect @ Capgemini
+>Author: Parthiban Srinivasan, Solution Architect @ Capgemini
 ___
 >Google Inc
+
 >Skaffold OSS authors
