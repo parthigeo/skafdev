@@ -54,17 +54,17 @@ Configure `current-context` with your target cluster environment
 
 ## First time app build & deploy
 1. Verify Installation
-`skaffold version`
+> `skaffold version`
 
 2. Change directories to `local-dev` example
-`cd example/local-dev/simple`
+> `cd example/local-dev/simple`
 
 3. Verify contents under the directory by `ls -a`
 > Dockefile, app.yaml, skaffold.yaml
 
-4. Run 'skaffold dev'
+4. Execute `skaffold dev`
 
-5. Response log from `Skaffold dev`
+5. Response log from `skaffold dev` execution
 > placeholder for
 
 6. Things done by *Skaffold* for you:
