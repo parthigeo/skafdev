@@ -1,8 +1,8 @@
-# Continuous LOCAL Kubernetes app development using *Skaffold*
+# Continuous local Kubernetes app development using *Skaffold*
 This guide walks you thru continuous local application development using *Skaffold* container tool. This guide aims to demonstrate frictionless developer experience for application running on local Kubernetes cluster.
 
 ## What is *Skaffold*
-It is a command line tool from Google's open source container toolset that helps iterate an application locally. Then deploys application on either local or remote Kubernetes cluster. This tool bascially detect changes in your application source code as well as the dependencies of your docker images. And automatically triggers build, push and deploy to local / remote Kubernetes cluster.
+It is a command line tool from Google's open source container tools that helps iterate an application. It  deploys application on either local or remote Kubernetes cluster. This tool basically detect changes in your application source code as well as the dependencies of your docker images. And automatically triggers build, push & deploy to local / remote Kubernetes cluster per configuration.
 
 ## Focus
 This guide focuses on local development context rather than remote context such as automated CI & CD pipeline. Advanced workflow will be covered separately.
