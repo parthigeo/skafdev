@@ -51,14 +51,15 @@ Two execution modes mentioned below are supported. We will cover `dev` mode in t
 1. Local kubernetes cluster as target cluster for *skaffold*. Any Kubernetes cluster will work.
 * Minikube
 * Docker Edge (Mac / Windows)
-* GKE
+* Minishift (not tested)
 
 2. *Docker*
 * Connects to local docker daemon
-* Used docker-for-desktop context using local docker daemon
+* Uses "docker-for-desktop" context via local docker daemon
 
-2. *Kubectl* - (_optional_)
-Configure `current-context` with your target cluster environment (local cluster for these labs)
+2. *Kubectl* (_optional_)
+* Automatically configures `current-context` for local cluster environment
+* Manually configure `current-context` for your remote target cluster environment
 
 ## Installation   
 1. Clone this repository to get access to latest *skaffold* build
