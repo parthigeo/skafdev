@@ -34,17 +34,64 @@ In this local development mode, your application deployed on local kubernetes cl
 * Maintains continuous build-deploy loop
 * Warns on error
 
-# Getting started with local development   
+# Getting started with local application development   
 <Placeholder>
 
 ## Prerequisites   
-<Placeholder>
+Local kubernetes cluster. Any Kubernetes cluster will work.
+* Minikube
+* Docker Edge (Mac / Windows)
+* GKE
+Kubectl. Configure `current-context` with your target cluster environment
+
 
 ## Installation   
-<Placeholder>
+1. Clone this repository to get access to latest *skaffold* build
+`git clone https://github.com/parthigeo/skafdev.git`
 
-## Continuous development
-<Placeholder>
+2. Run the below install script
+`source skaffold-install.sh`
+
+## Continuous development - first time build & deploy
+1. Verify Installation
+`skaffold version`
+
+2. Change directories to `local-dev` example
+`cd example/local-dev/simple`
+
+3. Verify contents under the directory by `ls -a`
+> Dockefile, app.yaml, skaffold.yaml
+
+4. Run 'skaffold dev'
+
+5. Logs from `Skaffold dev`
+> placeholder for
+
+6. Things done by *Skaffold* for you:
+* Build an docker image from the local source code
+* Tag it with its `sha256`
+* Sets that image in the Kubernetes manifests defined in `skaffold.yaml`
+* Deploy the Kubernetes manifests using `Kubectl apply -f`
+
+7. Output of the deployed containers
+> Placeholder
+
+## Continuous development - change loop
+1. Update application code
+> Placeholder
+
+2. Save the file
+> Placeholder
+
+3. Output from re-deployed application
+> Placeholder
+
+4. Things done by *Skaffold* for you:
+* Automatically detect source code change
+* Re-build an docker image from the local source code
+* Re-tag it with its `sha256`
+* Re-set the image in the Kubernetes manifests defined in `skaffold.yaml`
+* Re-deploy the Kubernetes manifests using `Kubectl apply -f`
 
 # Credits
 >Author: Parthiban Srinivasan, Solution Architect @ Capgemini
