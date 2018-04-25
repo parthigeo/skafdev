@@ -1,5 +1,5 @@
 # Continuous local Kubernetes app development using *Skaffold*
-This guide walks you thru continuous local application development using *Skaffold* container tool. This guide aims to demonstrate frictionless developer experience for application running on local Kubernetes cluster.
+This guide walks you thru continuous local application development workflow using *Skaffold*, container tool OSS from Google. It  aims to demonstrate frictionless developer experience for application running on local Kubernetes cluster.
 
 ## What is *Skaffold*
 It is a command line tool from Google's open source container tools that helps iterate an application. It  deploys application on either local or remote Kubernetes cluster. This tool basically detect changes in your application source code as well as the dependencies of your docker images. And automatically triggers build, push & deploy to local / remote Kubernetes cluster per configuration.
@@ -10,13 +10,20 @@ This guide focuses on local development context rather than remote context such 
 > Consider this as *Skaffold* getting started guide for local application development
 
 ## Why use *Skaffold*
-* Simple to use command line tool.
-* No complex cluster / server side component.
-* Deploy regularly when changing & saving files locally
-* Deploy only the pieces of your stack that have change
-* Image tag management support
+* Simple to use command line tool
+* No cluster side set-up or server side components.
+* Minimal to zero knowledge of Kubernetes
+* Deploy regularly when changing / saving files locally
+* Deploy only the pieces of stack that have change
+* Image tag management
 * Pluggable architecture that supports existing tools
 * Flexible workflow support for remote development and  automated CI & CD pipeline
+* Backed by Google & OSS community
+
+## Alternatives to *Skaffold*
+* [_Telepresence_ from Datawire](https://www.telepresence.io/ "Telepresence's homepage")
+* [_Draft_ from Azure](https://draft.sh/ "Draft's homepage")
+* [_Ksync_ from Vaporware](https://vapor-ware.github.io/ksync/ "Ksync's homepage")
 
 ## Operating Modes
 Two modes of operation are supported i.e. DEV & RUN command execution modes
@@ -26,7 +33,7 @@ Two modes of operation are supported i.e. DEV & RUN command execution modes
 `skaffold run`
 
 ## Skaffold `dev`
-In this local development mode, your application deployed on local kubernetes cluster will be continually updated.  In this mode, *Skaffold*
+`dev` is local development mode. Your application deployed on local Kubernetes cluster will be continually updated.  In this mode, *Skaffold*
 
 * Watches source code and docker image dependencies for changes.
 * Runs a build  and deploy when changes are detected
